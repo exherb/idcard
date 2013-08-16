@@ -57,7 +57,7 @@ def parse(id_card_no):
         except Exception, e:
             pass
     if birthday_year >= 0 and birthday_month >= 0 and birthday_day  >= 0:
-        results['birthday'] = str(date(birthday_year, birthday_month, birthday_day))
+        results['birthday'] = date(birthday_year, birthday_month, birthday_day)
 
     if len(id_card_no) >= 16:
         results['police_station_code'] = id_card_no[14:16]
