@@ -3,6 +3,13 @@ idcard
 
 get info from id card number
 
+install
+-------
+
+```bash
+pip install idcard
+```
+
 usage
 ------
 
