@@ -76,7 +76,7 @@ def parse(id_card_no):
         for i in range(1, 18):
             try:
                 number = int(id_card_no[i-1])
-            except Exception, e:
+            except Exception as e:
                 exception = e
                 break
             efficient = pow(2, 18 - i)%11
